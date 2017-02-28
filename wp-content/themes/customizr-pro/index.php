@@ -50,15 +50,30 @@ if ( apply_filters( 'czr_four_do', false ) ) {
 
                     <?php do_action ('__after_loop');##hook of the comments and the posts navigation with priorities 10 and 20 ?>
 
+                  <h3>Our Videos</h3>
+
+                    <iframe width="500" height="376" src="https://www.youtube.com/embed/rAkhFkrF_yc?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
+                   
+                    <h4>User Testimonal</h4>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+
+
                 </div><!--.article-container -->
 
            <?php do_action( '__after_article_container'); ##hook of left sidebar ?>
+
+
 
         </div><!--.row -->
     </div><!-- .container role: main -->
 
     <?php do_action( '__after_main_container' ); ?>
-<h3> Our Videos</h3>
+
+
 
 </div><!-- //#main-wrapper -->
 
