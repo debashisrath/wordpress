@@ -13,10 +13,11 @@ if ( apply_filters( 'czr_four_do', false ) ) {
 ?>
 <?php do_action( '__before_main_wrapper' ); ##hook of the header with get_header ?>
 <div id="main-wrapper" class="<?php echo implode(' ', apply_filters( 'tc_main_wrapper_classes' , array('container') ) ) ?>">
-
+<h1>We provide solutions for your problems</h1>
     <?php do_action( '__before_main_container' ); ##hook of the featured page (priority 10) and breadcrumb (priority 20)...and whatever you need! ?>
 
     <div class="container" role="main">
+    <h2>Services provided by White Lotus Spirituality</h2>
         <div class="<?php echo implode(' ', apply_filters( 'tc_column_content_wrapper_classes' , array('row' ,'column-content-wrapper') ) ) ?>">
 
             <?php do_action( '__before_article_container'); ##hook of left sidebar?>
@@ -49,14 +50,30 @@ if ( apply_filters( 'czr_four_do', false ) ) {
 
                     <?php do_action ('__after_loop');##hook of the comments and the posts navigation with priorities 10 and 20 ?>
 
+                  <h3>Our Videos</h3>
+
+                    <iframe width="500" height="376" src="https://www.youtube.com/embed/rAkhFkrF_yc?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
+                   
+                    <h4>User Testimonal</h4>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+                    <p>sad  sad dsadsad sad asdasd </p>
+
+
                 </div><!--.article-container -->
 
            <?php do_action( '__after_article_container'); ##hook of left sidebar ?>
+
+
 
         </div><!--.row -->
     </div><!-- .container role: main -->
 
     <?php do_action( '__after_main_container' ); ?>
+
+
 
 </div><!-- //#main-wrapper -->
 
