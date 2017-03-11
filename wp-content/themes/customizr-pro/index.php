@@ -12,10 +12,24 @@ if ( apply_filters( 'czr_four_do', false ) ) {
 }
 ?>
 <?php do_action( '__before_main_wrapper' ); ##hook of the header with get_header ?>
+
+
 <div id="main-wrapper" class="<?php echo implode(' ', apply_filters( 'tc_main_wrapper_classes' , array('container') ) ) ?>">
+    <?php if ( is_front_page() ) { ?>
+    <div class="">
+       <h2 class="scom-h2-home-tag" style="text-align: center;font-size: 28px;color: #eb1d1f;font-weight: 700;">We provide solutions for your problems</h2>
+    </div>
+<?php } ?>
     <?php do_action( '__before_main_container' ); ##hook of the featured page (priority 10) and breadcrumb (priority 20)...and whatever you need! ?>
 
     <div class="container" role="main">
+<?php if ( is_front_page() ) { ?>
+    <div class="">
+       <h3 class="scom-h2-home-tag" style="text-align: center;font-size: 28px;color: #eb1d1f;font-weight: 700;">
+       Our Products </h2>
+    </div>
+<?php } ?>
+
         <div class="<?php echo implode(' ', apply_filters( 'tc_column_content_wrapper_classes' , array('row' ,'column-content-wrapper') ) ) ?>">
 
             <?php do_action( '__before_article_container'); ##hook of left sidebar?>
@@ -54,7 +68,27 @@ if ( apply_filters( 'czr_four_do', false ) ) {
 </div>
     <?php do_action( '__after_main_container' ); ?>
 
+<?php if ( is_front_page() ) { ?>
+    <div class="">
+       <h3 class="scom-h2-home-tag" style="text-align: center;font-size: 28px;color: #eb1d1f;font-weight: 700;">Our Videos</h2>
+    </div>
 
+<div class="row">
+  <div class="span12">
+    Level 1 column
+    <div class="row">
+      <div class="span4">
+            <iframe width="504" height="306" src="https://www.youtube.com/embed/rAkhFkrF_yc?feature=oembed" frameborder="0" allowfullscreen="" style="width: 100%;"></iframe>
+        </div>
+      <div class="span4"> 
+      <iframe width="504" height="306" src="https://www.youtube.com/embed/Kc5iWa-Ky30?feature=oembed" frameborder="0" allowfullscreen="" style="width: 100%;"></iframe>
+      </div>
+      <div class="span4"><iframe width="504" height="306" src="https://www.youtube.com/embed/MbDndJdRi1o?feature=oembed" frameborder="0" allowfullscreen=""></iframe></div>
+    </div>
+    <p><a href="">View More</a></p>
+  </div>
+</div>
+<?php } ?>
 
 </div><!-- //#main-wrapper -->
 
