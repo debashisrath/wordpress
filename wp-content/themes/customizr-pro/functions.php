@@ -54,3 +54,4 @@ require_once( apply_filters( 'czr_init', get_template_directory() . '/inc/czr-in
 * More informations about how to create a child theme with Customizr : http://docs.presscustomizr.com/article/24-creating-a-child-theme-for-customizr/
 * A good starting point to customize the Customizr theme : http://docs.presscustomizr.com/article/35-how-to-customize-the-customizr-wordpress-theme/
 */
+
