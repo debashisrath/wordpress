@@ -21,3 +21,15 @@
 * If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
 * To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
 */
+.video-title-name{text-align: center;margin-bottom: 40px;margin-top: 40px;clear: both;padding-top: 40px;font-size: 22px;color: #fb7d00;}
+.video-title-name {text-align: center;}
+.product-title-name{font-size: 16px;font-weight: 900; line-height: 27px;color: #fb7d00;}
+.scom-h2-home-tag{text-align: center;font-size: 28px;color: #eb1d1f;font-weight: 700;}
+h4.peopleabout.scom-h2-home-tag{margin-top: 60px;margin-bottom: 30px;}
+.home_view_more{float: right;color: #ef0000;}
+.testimonial-description{margin-top: 20px;font-style: italic;}
+.persionname{float: center; color:#ef0000; margin-top: 20px;  font-style: normal;}
+.home_view_more a{color: #ef0000;font-size: 16px;}
+.main-testimonial{text-align: center;}
+.aligncenter{clear: both;display: block;margin: 0 auto 1.75em;}
+.entry-header {display: none;}
